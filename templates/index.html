@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="bg-dark text-white py-5 text-center">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold">Hi, I'm <span class="text-primary">Shubham Inamdar</span></h1>
+        <p class="lead my-3">Electronics & Telecommunication Engineer | Full-Stack Developer</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg">View My Work</a>
+            <a href="{{ url_for('static', filename='resume/Shubham_Inamdar_ATS_Resume.pdf') }}" class="btn btn-outline-light btn-lg" download>Download Resume</a>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row g-5 align-items-start">
+        
+        <div class="col-md-7">
+            <div class="mb-4">
+                <img src="{{ url_for('static', filename='images/profiles.jpg') }}" 
+                     alt="Shubham Inamdar" 
+                     class="img-fluid rounded shadow" 
+                     style="max-width: 200px; height: 200px; object-fit: cover; border-left: 5px solid #0d6efd;">
+            </div>
+            
+            <h3 class="fw-bold border-bottom pb-2 mb-3">About Me</h3>
+            <p class="text-muted" style="line-height: 1.7; text-align: justify;">
+                Final-year B.Tech student with a strong foundation in programming, cloud computing, and DevOps practices. 
+                Proficient in Python and SQL, with practical experience using AWS Cloud Services, including EC2, S3, IAM. 
+                Recognized as a finalist in the Smart India Hackathon (Panipat, Haryana) for innovative problem-solving and 
+                team collaboration under time-bound challenges. Demonstrates excellent teamwork, a problem-solving attitude, 
+                and a passion for learning modern cloud-native technologies to deliver efficient, scalable, and secure solutions.
+            </p>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="card p-4 shadow-sm border-0 bg-white">
+                <h3 class="fw-bold border-bottom pb-2 mb-4 text-dark">Technical Expertise</h3>
+                
+                <div class="mb-4">
+                    <h6 class="fw-bold text-secondary text-uppercase small tracking-wider mb-2">Languages & Frameworks</h6>
+                    <span class="badge bg-secondary p-2 m-1 fs-6 fw-normal">Python</span>
+                    <span class="badge bg-secondary p-2 m-1 fs-6 fw-normal">SQL (MySQL)</span>
+                    <span class="badge bg-secondary p-2 m-1 fs-6 fw-normal">Django / Flask</span>
+                    <span class="badge bg-secondary p-2 m-1 fs-6 fw-normal">Scikit-learn / NLTK</span>
+                </div>
+                
+                <div>
+                    <h6 class="fw-bold text-secondary text-uppercase small tracking-wider mb-2">Cloud & Frontend</h6>
+                    <span class="badge bg-primary p-2 m-1 fs-6 fw-normal">AWS (EC2, S3, IAM)</span>
+                    <span class="badge bg-primary p-2 m-1 fs-6 fw-normal">HTML5 & CSS3</span>
+                    <span class="badge bg-primary p-2 m-1 fs-6 fw-normal">Bootstrap 5 & JS</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
